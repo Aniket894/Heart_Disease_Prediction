@@ -1,6 +1,6 @@
 ## Machine Learning Project Documentation 
 
-## Project Title: Heart Disease Classification
+# Project Title: Heart Disease Classification
 
 
 ##1. Project Objective:
