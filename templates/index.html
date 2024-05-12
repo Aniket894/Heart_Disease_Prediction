@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <form action="/predict_data" method="post">
+    
+        <label for="age">Age:</label>
+        <input type="text" name="age"><br>
+
+        <label for="sex">Sex (0 for female, 1 for male):</label>
+        <input type="text" name="sex"><br>
+
+        <label for="chest_pain_type">Chest Pain Type (1-4):</label>
+        <input type="text" name="chest_pain_type"><br>
+
+        <label for="resting_bps">Resting Blood Pressure:</label>
+        <input type="text" name="resting_bps"><br>
+
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="text" name="cholesterol"><br>
+
+        <label for="fasting_blood_sugar">Fasting Blood Sugar (0 or 1):</label>
+        <input type="text" name="fasting_blood_sugar"><br>
+
+        <label for="resting_ecg">Resting Electrocardiographic Results (0-1):</label>
+        <input type="text" name="resting_ecg"><br>
+
+        <label for="max_heart_rate">Maximum Heart Rate Achieved:</label>
+        <input type="text" name="max_heart_rate"><br>
+
+        <label for="exercise_angina">Exercise Induced Angina (0 or 1):</label>
+        <input type="text" name="exercise_angina"><br>
+
+        <label for="oldpeak">ST Depression Induced by Exercise Relative to Rest:</label>
+        <input type="text" name="oldpeak"><br>
+
+        <label for="ST_slope">Slope of the Peak Exercise ST Segment (1-3):</label>
+        <input type="text" name="ST_slope"><br>
+
+
+        <input type="submit" value="Predict">
+        
+    </form>
+</body>
+</html>
