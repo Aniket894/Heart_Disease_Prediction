@@ -1,18 +1,18 @@
-## Machine Learning Project Documentation 
+# Machine Learning Project Documentation 
 
-# Project Title: Heart Disease Classification
+## Project Title: Heart Disease Classification
 
 
-##1. Project Objective:
+## 1. Project Objective:
 
 The main objective of this project is to develop a machine learning model that can accurately classify whether a patient has heart disease based on certain medical attributes.
 
 
-##2. Dataset:
+## 2. Dataset:
 
 For this project, the dataset used is the Heart Disease UCI dataset, which is commonly used for heart disease classification tasks. The dataset contains various attributes such as age, sex, cholesterol levels, blood pressure, etc., along with a target variable indicating the presence or absence of heart disease. It consists of a total of [insert dataset size] samples.
 
-##3. Problem Type:
+## 3. Problem Type:
 
 This project involves a binary classification problem where the goal is to predict whether a patient has heart disease (1) or does not have heart disease (0) based on the given attributes.
 
@@ -49,7 +49,7 @@ target: Presence of heart disease (1 = yes, 0 = no).
 
 
 
-## Exploratory Data Analysis (EDA):
+# Exploratory Data Analysis (EDA):
 
 
 ## Library Importation:
@@ -62,12 +62,12 @@ To facilitate data manipulation, visualization, and analysis, essential librarie
 The 'Unnamed: 0' column, presumably serving as an index or identifier, was removed from the dataset due to its lack of meaningful information for analysis.
 
 
-##Data Type Assessment:
+## Data Type Assessment:
 
 Upon examination, it was noted that the 'cholesterol' and 'oldpeak' columns were of data type float64, indicating decimal values. In contrast, all other columns were of data type int64, suggesting integer values.
 
 
-##Null Value Examination:
+## Null Value Examination:
 
 A thorough review of the dataset confirmed the absence of null values across all columns. This ensures the dataset's completeness and obviates the necessity for imputation strategies.
 
@@ -84,7 +84,7 @@ A descriptive summary of the dataset's numerical attributes was generated, offer
 
 
 
-## Feature Engineering:
+# Feature Engineering:
 
 
 ## Splitting the Dataset:
@@ -92,22 +92,22 @@ A descriptive summary of the dataset's numerical attributes was generated, offer
 The dataset was divided into two main components: independent variables (features) and dependent variable (target).
 
 
-##Independent Variables (Features):
+## Independent Variables (Features):
 
 The independent variables, denoted as X, represent the input features used for predicting the target variable. These features were extracted from the dataset excluding the target variable.
 
 
-##Dependent Variable (Target):
+## Dependent Variable (Target):
 
 The dependent variable, denoted as y, represents the target variable that the model seeks to predict. It was separated from the dataset and represents the outcome or response variable of interest.
 
 
-##Train-Test Split:
+## Train-Test Split:
 
 To assess the model's performance and generalization ability, the dataset was further split into training and testing sets.
 
 
-##X_train, X_test, y_train, y_test:
+## X_train, X_test, y_train, y_test:
 
 The dataset was partitioned into four subsets:
 
@@ -122,7 +122,7 @@ y_test: This subset contains the corresponding dependent variable (target) value
 
 
 
-## Model Training: 
+# Model Training: 
 
 
 ## Model Selection:
@@ -145,14 +145,13 @@ The initialized logistic regression model was trained on the training data (X_tr
 After training, the trained logistic regression model was used to predict the target variable values for the testing data (X_test). The predict() method was applied to generate predictions based on the learned parameters.
 
 
-##Default Parameters:
+## Default Parameters:
 
-The model training and prediction were performed using the default parameters provided by the logistic regression implementation. These parameters may vary depending on the specific library or package used (e.g., scikit-learn).
-
-
+The model training and prediction were performed using the default parameters provided by the logistic regression implementation. 
 
 
-## Model Evaluation:
+
+# Model Evaluation:
 
 
 ## Accuracy Score:
@@ -160,7 +159,7 @@ The model training and prediction were performed using the default parameters pr
 The accuracy score of the logistic regression model was found to be approximately 0.7746, indicating that the model correctly predicted the target variable in approximately 77.46% of the cases.
 
 
-##Classification Report:
+## Classification Report:
 
 Precision: Precision measures the proportion of correctly predicted positive cases among all predicted positive cases. In this case, the precision for class 0 (negative class) is 0.77, and for class 1 (positive class) is 0.78.
 
@@ -198,10 +197,10 @@ The confusion matrix reveals that the model has a tendency to make more false ne
 
 
 
-## Hyperparameter Tuning:
+# Hyperparameter Tuning:
 
 
-##Parameter Grid:
+## Parameter Grid:
 
 A parameter grid was defined to explore different combinations of hyperparameters for the logistic regression model. The grid included options for penalty, regularization strength (C), solver algorithm, and maximum number of iterations.
 
@@ -217,7 +216,7 @@ After performing grid search, the best combination of hyperparameters was identi
 
 
 
-## Model Evaluation Again :
+# Model Evaluation Again :
 
 
 ## Accuracy Score:
@@ -269,7 +268,7 @@ Create pickle file containing the trained logistic regression model with the opt
 
 
 
-## Flask API Creation:
+# Flask API Creation:
 
 
 ## Folder Structure:
