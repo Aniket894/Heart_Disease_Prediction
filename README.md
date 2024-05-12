@@ -10,8 +10,7 @@ The main objective of this project is to develop a machine learning model that c
 
 ## 2. Dataset:
 
-For this project, the dataset used is the Heart Disease UCI dataset, which is commonly used for heart disease classification tasks. The dataset contains various attributes such as age, sex, cholesterol levels, blood pressure, etc., along with a target variable indicating the presence or absence of heart disease. It consists of a total of [insert dataset size] samples.
-
+For this project, the dataset used is the Heart Disease UCI dataset, which is commonly used for heart disease classification tasks. The dataset contains various attributes such as age, sex, cholesterol levels, blood pressure, etc., along with a target variable indicating the presence or absence of heart disease.
 ## 3. Problem Type:
 
 This project involves a binary classification problem where the goal is to predict whether a patient has heart disease (1) or does not have heart disease (0) based on the given attributes.
